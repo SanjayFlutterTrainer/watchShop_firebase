@@ -8,6 +8,7 @@ class Products extends StatelessWidget {
 
   CollectionReference users = FirebaseFirestore.instance.collection('users');
   final FirebaseAuth auth = FirebaseAuth.instance;
+
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -43,10 +44,12 @@ class Products extends StatelessWidget {
                 ],
               ),
               ElevatedButton(
-                  onPressed: () {
-                    users.doc(auth.currentUser!.uid).update({
-                      'cart': [Watch["title"]]
-                    });
+                  onPressed: () async {
+                    final user = await users.doc(auth.currentUser!.uid).get();//current user details
+                    List cart = user.get('cart');//current user cart
+                    print(cart);
+                    cart.add(Watch['title']);
+                    users.doc(auth.currentUser!.uid).update({'cart': cart});
                   },
                   child: Text(
                     "add to cart",
