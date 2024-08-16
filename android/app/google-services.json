@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "96890905156",
+    "project_id": "watchshopapp-5fe7d",
+    "storage_bucket": "watchshopapp-5fe7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96890905156:android:45d33466ffb396e9ac9211",
+        "android_client_info": {
+          "package_name": "com.ex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVqHqP0XW7LvthcL6mDBcmKlub2wQZTUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96890905156:android:265a40c300a8e392ac9211",
+        "android_client_info": {
+          "package_name": "com.example.watch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVqHqP0XW7LvthcL6mDBcmKlub2wQZTUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
